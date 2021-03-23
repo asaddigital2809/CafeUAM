@@ -71,7 +71,7 @@ public class Cart extends AppCompatActivity {
     private void showAlertDialog() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(Cart.this);
         alertDialog.setTitle("One more step!");
-        alertDialog.setMessage("Enter Your Room No:");
+        alertDialog.setMessage("Enter Your Room No or Address:");
         final EditText edtAdd = new EditText(Cart.this);
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.WRAP_CONTENT,
