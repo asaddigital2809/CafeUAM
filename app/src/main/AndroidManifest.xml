@@ -7,9 +7,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_mart"
+        android:icon="@mipmap/ic_launcher_cafe_foreground"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_mart_round"
+        android:roundIcon="@mipmap/ic_launcher_cafe_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
@@ -21,7 +21,7 @@
         <activity android:name=".MainActivity" />
         <activity
             android:name=".LoginActivity"
-            android:label="Multan Mart"
+            android:label="UAM-Cafe"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
