@@ -3,7 +3,7 @@ package com.asad.mnsuam.myapplication.Model;
 import java.util.List;
 
 public class Request {
-    private String phone, name, total, address;
+    private String phone, name, total, address, status;
 
     public void setPhone(String phone) {
         this.phone = phone;
@@ -47,12 +47,21 @@ public class Request {
 
     private List<Order> items; //list of items ordered
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     public Request(String phone, String name, String total, String address, List<Order> items) {
         this.phone = phone;
         this.name = name;
         this.total = address;
         this.address = total;
         this.items = items;
+        this.status = String.valueOf('0'); // Default 0, 1: shipping, 2: shipped
     }
 
     public Request() {
