@@ -18,8 +18,8 @@
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.asad.mnsuam.myapplication.ui.slideshow.SlideshowFragment"
+        android:id="@+id/nav_order"
+        android:name="com.asad.mnsuam.myapplication.ui.order.OrderActFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
 
