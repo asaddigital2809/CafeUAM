@@ -6,9 +6,18 @@ public class User {
     private String password;
     private String address;
     private String email;
+    private String isStaff;
 
     public User(){
 
+    }
+
+    public String getIsStaff() {
+        return isStaff;
+    }
+
+    public void setIsStaff(String isStaff) {
+        this.isStaff = isStaff;
     }
 
     public String getName() {
@@ -56,5 +65,6 @@ public class User {
         this.password = password;
         this.address = address;
         this.email = email;
+        this.isStaff = "false";
     }
 }

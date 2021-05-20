@@ -140,8 +140,7 @@ public class RegistrationActivity extends AppCompatActivity {
                         Intent intent = new Intent(RegistrationActivity.this,MainActivity.class);
                         startActivity(intent);
                         Toast.makeText(RegistrationActivity.this, "Signed Up Successfully", Toast.LENGTH_SHORT).show();
-//                            finish();
-
+                        finish();
                         stopService(intent);
                     }
 
