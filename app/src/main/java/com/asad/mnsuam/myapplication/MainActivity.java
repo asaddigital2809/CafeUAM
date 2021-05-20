@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.asad.mnsuam.myapplication.Interface.ItemClickListener;
 import com.asad.mnsuam.myapplication.Model.Category;
+import com.asad.mnsuam.myapplication.Model.Common;
 import com.asad.mnsuam.myapplication.ViewHolder.MenuViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     FirebaseDatabase dataBase;
     DatabaseReference category;
-    TextView txtFullname;
+    TextView txtName;
     RecyclerView recyclerHome;
     RecyclerView.LayoutManager layoutManager;
     FirebaseRecyclerAdapter<Category, MenuViewHolder> adapter;
@@ -78,9 +79,9 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
 
         //Set Name for User
-        View headerView = navigationView.getHeaderView(0);
-//        txtFullname = headerView.findViewById(R.id.userName);
-//        txtFullname.setText(Common.saveCurrentUser.getName());
+        View view = navigationView.getHeaderView(0);
+        txtName =  (TextView)view.findViewById(R.id.userName);
+        txtName.setText(Common.saveCurrentUser.getName());
         //load Menu
         recyclerHome = (RecyclerView)findViewById(R.id.recyclerView);
         recyclerHome.setHasFixedSize(true);
